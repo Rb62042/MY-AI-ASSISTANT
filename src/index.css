@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #09090b;
+  color: #ffffff;
+  overflow: hidden;
+  font-family: var(--font-sans);
+}
+
+.futuristic-bg {
+  background: radial-gradient(circle at 50% 50%, #18181b 0%, #09090b 100%);
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+}
+
+.grid-overlay {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+}
